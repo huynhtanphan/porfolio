@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="./assets/images/phan-huynh-tan-icon.png" />
+  <title>Phan Huynh Tan's Portfolio</title>
+  <meta name="description" content="Phan Huynh Tan's Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <!-- sds -->
+  <div id="particles-js">
+    <div class="header">
+      <h1>
+        <span class="site-title">Phan Huynh Tan</span>
+        <span class="site-description">• Data Analyst •</span>
+      </h1>
+      <div class="header-icons">
+        <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/phan-huynh-tan/">
+          <i class="icon fa-brands fa-linkedin"></i>
+        </a>
+        <a aria-label="My Github Profile" target="_blank" href="https://github.com/huynhtanphan">
+          <i class="icon fab fa-github"></i>
+        </a>
+        <a aria-label="My Résumé" target="_blank" href="https://drive.google.com/file/d/1-RGEs-WoIPWjbs8YFP1jMBCxRFgnwYDu/view?usp=sharing">
+          <i class="icon fa fa-paperclip"></i>
+        </a>
+        <a aria-label="Send Email" href="mailto:phanhuynhtan31@gmail.com" target="_blank">
+          <i class="icon fa fa-envelope-square"></i> 
+      </div>
+      <div class="header-links">
+        <a style="color:rgb(0, 0, 0)" class="link" href="#main-content" data-scroll>About Me</a>
+        <a style="color:rgb(0, 0, 0)" class="link" href="#my-work-section" data-scroll>Projects</a>
+      </div>
+    </div>
+    <a class="down"  href="#main-content" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  </div>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="nav-title-link" href="./index.html">
+      <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+      <span class="nav-title">My Portfolio</span>
+      <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+      <a class="button" href="mailto:">
+        <span class="button-text">Contact Me</span>
+      </a>
+    </a>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <div id="main-content">
+
+
+
+    <!-- ABOUT SECTION -->
+    <div id="about-section">
+      <span  class="subheader-text">About Me</span>
+      <div class="about-section-content">
+        <div class="body-text">Hi,</div>
+
+        <div class="body-text">I am Phan Huynh Tan, someone who seeks insights from vast amounts of data. I have accumulated significant experience 
+          in planning, operating, analyzing, and evaluating advertising campaigns on e-commerce platforms. I have also participated 
+          in marketing activities and small business development in non-profit projects.</div>
+        
+        <div class="body-text">My passion lies in the field of data analysis, extracting valuable information from datasets. 
+          I possess skills in utilizing query tools, visualization, and analysis to process data effectively. 
+          I believe that in today's digital age, data plays a crucial role in most industries, and individuals with data analysis skills 
+          have a significant advantage in the job market.</div>
+        
+        <span> <a href=""><image class="page-header-image" src="./assets/images/phan-huynh-tan-cover.png"></image> </a> </span>
+
+        <div class="body-text">I am excited about the opportunities ahead and confident that my passion for e-commerce and data analysis will help me achieve my goals. 
+          I aspire to apply my knowledge and skills in a professional environment where I can contribute to the development and success of an organization.</div>
+        
+        <div class="body-text">I look forward to the opportunity to work and share my passion with colleagues and experts in the industry.</div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="my-work-section">
+      <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+      <span class="subheader-text">My Projects</span>
+
+      <div class="projects-container">
+
+        <!--PROJECT 1-->
+        <div class="project-card">
+          <img src="./assets/images/project-personal-finance-analysis.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Personal Finance Analysis</div>
+            <div class="body-text project-card-text">This personal finance project helps me effectively control my spending. 
+              By tracking daily expenses, analyzing trends, and visualizing data, I can identify areas where I can save and make informed financial 
+              decisions to achieve my goals.</div>
+          </div>
+          <a class="button" href="./project-pages/project-personal-finance-analysis.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
+        <!--PROJECT 2-->
+        <div class="project-card">
+          <img src="./assets/images/project-sql-exploration-covid-19.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">COVID-19 Exploration Data</div>
+            <div class="body-text project-card-text">Analyzing COVID-19 data to gain insights into the spread and impact of the virus across different countries 
+              and continents. The data used in this project comes from two tables - CovidDeaths and CovidVaccinations - and is stored in a SQL Server database 
+              called 
+              PortfolioProject.
+            </div>
+          </div>
+          <a class="button" href="./project-pages/project-sql-exloration-covid-19.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
+        <!--PROJECT 3-->
+        <div class="project-card">
+          <img src="./assets/images/project-covid-19-overview.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Covid-19 Overview</div>
+            <div class="body-text project-card-text">Analyzing COVID-19 death data to understand global and regional trends. It calculates total cases, 
+              total deaths, death percentages, identifies countries with the highest death tolls, and analyzes locations with the highest overall 
+              and daily infection rates relative to population.</div>
+          </div>
+          <a class="button" href="./project-pages/project-covid-19-overview.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
+        <!--PROJECT 4-->        
+        <div class="project-card">
+          <img src="./assets/images/project-sql-cleaning-nashville-housing-data.JPG" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Nashville Housing Data Cleaning</div>
+            <div class="body-text project-card-text">Cleaning the Nashville Housing data within a SQL Server database to ensure high-quality data 
+              for real estate analysis. Various techniques, such as standardization, missing value imputation, and outlier handling, address inconsistencies 
+              and improve data accuracy.</div>
+          </div>
+          <a class="button" href="./project-pages/project-sql-cleanding-nashville-housing.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <a class="icon-link" target="_blank" href="https://www.facebook.com/phanhuynhtann">
+      <image src="./assets/icons/facebook.svg" class="footer-icon" />
+    </a>
+
+    <a class="icon-link" target="_blank" href="https://www.instagram.com/phan.huynh.tan">
+      <image src="./assets/icons/instagram.svg" class="footer-icon" />
+    </a>
+
+    <a class="icon-link" target="_blank" href="https://twitter.com/PhanHuynhTan">
+      <image src="./assets/icons/twitter.svg" class="footer-icon" />
+    </a>
+
+    <a class="icon-link" target="_blank" href="https://www.tiktok.com/@phanhuynhtann">
+      <image src="./assets/icons/tiktok.svg" class="footer-icon" />
+    </a>
+
+    <a class="icon-link" target="_blank" href="https://www.youtube.com/@phanhuynhtann">
+      <image src="./assets/icons/youtube.svg" class="footer-icon" />
+    </a>
+
+  </div>
+  <!-- Import JS: Particles Theme -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="./js/sweet-scroll.min.js"></script>
+  <script src="./js/google-analytics.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

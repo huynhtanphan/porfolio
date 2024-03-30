@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" href="../assets/images/phan-huynh-tan-icon.png" />
+     <title>Project - SQL Exploration Covid-19</title>
+    <meta name="description" content="Covid-19 Overview">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">My Portfolio</span>
+        <a class="button" href="mailto:">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">Covid-19 Overview</div>
+        <div class="body-text">
+          - The project focuses on analyzing COVID-19 death data to understand global and regional trends. It calculates total cases, total deaths, death percentages, identifies countries with the highest death tolls, and analyzes locations with the highest overall and daily infection rates relative to population.
+        </div>
+        <image class="project-header-image" src="../assets/images/project-covid-19-overview.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <div id="project-details">
+        <div class="subheader-text">Methodology:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            - Data Acquisition: COVID-19 death data retrieved from a SQL Server database ("PortfolioProject.CovidDeaths"). <br>
+            - Data Analysis: SQL queries formulated to extract specific data for visualization (Global Overview, Death Counts , Infection Rates). <br>
+            - Data Visualization: Tableau used to create visualizations from the extracted data.
+          </div>
+        </div>
+
+        <div class="subheader-text">Benefits:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            - Gain insights into the global picture of COVID-19 deaths. <br>
+            - Identify countries with the highest death tolls. <br>
+            - Analyze locations with the highest overall and daily infection rates. <br>
+            - Potentially identify factors influencing death rates and infection rates. <br>
+          </div>
+        </div>
+
+        <div class="subheader-text">Tools:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            - SQL for data extraction: The project utilizes four SQL queries to extract specific data for visualization. Click here to more details: <a href="https://github.com/huynhtanphan/covid-19_overview">github.com/huynhtanphan/covid-19_overview</a><br>
+            - Tableau for data visualization: The project utilizes Tableau to construct a COVID-19 overview dashboard. Click here to more details: <a href="https://public.tableau.com/views/Covid19_17101685696520/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">public.tableau.com/views/Covid_19-overview</a>
+          </div>
+        </div>
+
+        <div class="subheader-text">Data Used:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            - Raw data can be downloaded from: <a href="https://ourworldindata.org/covid-deaths">ourworldindata.org/covid-deaths</a> and other reputable data sources.
+          </div>
+        </div>
+
+        <div class="subheader-text">Notes:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            - Project was conducted Mar 2024 <br>
+            - Update data regularly to ensure accurate analysis results <br>
+            - Utilize various SQL queries to perform data analysis based on specific needs <br>
+          </div>
+        </div>
+      </div>
+      
+       <!-- IMAGE GALLERY -->
+       <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <div class="gallery-image-container half-width">
+              <img src="../assets/gallery/total-deaths-per-continet.png" class="gallery-image">
+              <span class="image-caption">Total deaths per Continet.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/gallery/percent-population-infected-per-country.png" class="gallery-image">
+              <span class="image-caption">Percent population infected per Country.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/gallery/percent-population-infected.png" class="gallery-image">
+              <span class="image-caption">Percent population infected.</span>
+            </div>
+        </div>
+      </div>     
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.facebook.com/phanhuynhtann">
+        <image src="../assets/icons/facebook.svg" class="footer-icon" />
+      </a>
+  
+      <a class="icon-link" target="_blank" href="https://www.instagram.com/phan.huynh.tan">
+        <image src="../assets/icons/instagram.svg" class="footer-icon" />
+      </a>
+  
+      <a class="icon-link" target="_blank" href="https://twitter.com/PhanHuynhTan">
+        <image src="../assets/icons/twitter.svg" class="footer-icon" />
+      </a>
+  
+      <a class="icon-link" target="_blank" href="https://www.tiktok.com/@phanhuynhtann">
+        <image src="../assets/icons/tiktok.svg" class="footer-icon" />
+      </a>
+  
+      <a class="icon-link" target="_blank" href="https://www.youtube.com/@phanhuynhtann">
+        <image src="../assets/icons/youtube.svg" class="footer-icon" />
+      </a>
+  
+    </div>
+
+	</body>
+</html>
