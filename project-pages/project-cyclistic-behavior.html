@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" href="../assets/images/phan-huynh-tan-icon.png" />
+     <title>Project - SQL Exploration Covid-19</title>
+    <meta name="description" content="SQL Exploration Covid-19 Duration 2020-2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">My Portfolio</span>
+        <a class="button" href="mailto:">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">Cyclistic Behavior</div>
+        <div class="body-text">
+          <p>Cyclistic is a bike-sharing service in Chicago with over 5,800 bikes and 600 docking stations. It features special bikes like reclining bikes, hand tricycles, and cargo bikes, catering to people with disabilities and those unable to use standard bikes.</p>
+          <p>The company aims to maximize the number of annual members, as they are more profitable than casual users. Understanding the different usage patterns between annual members and casual users is crucial.</p>
+          <p>Analyze Cyclistic’s historical data to identify usage trends and develop marketing strategies to convert casual users to annual members.</p>
+        </div>
+        <image class="project-header-image" src="../assets/images/project-cyclistic.webp">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <div id="project-details">
+        <div class="subheader-text">Methodology:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            <p>Using the Six Steps of Data Analysis Process</p>
+
+            <p>1. Ask:</p>
+            <p>- How do annual members and casual users use Cyclistic bikes differently?</p>
+            <p>- Why would casual users purchase annual memberships?</p>
+            
+            <p>2. Prepare:</p>
+            <p>- Collect the most recent 6 months of historical trip data.</p>
+            <p>- Identify data sources and organization.</p>
+            <p>- Ensure data integrity.</p>
+            
+            <p>3. Process:</p>
+            <p>- Check for errors and clean data.</p>
+            <p>- Select tools and methods for data processing.</p>
+            
+            <p>4. Analyze:</p>
+            <p>- Organize and format data.</p>
+            <p>- Perform descriptive analysis like averages, maximum values, and trip counts by day of the week.</p>
+            <p>- Identify trends and relationships.</p>
+            
+            <p>5. Share and Act:</p>
+            <p>- Create reports and data visualizations.</p>
+            <p>- Provide recommendations based on analysis results.</p>
+          </div>
+        </div>
+
+        <div class="subheader-text">Benefits:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            <p>Better understanding of bike usage behavior across different customer groups.</p>
+            <p>Identify factors that can drive casual users to become annual members.</p>
+            <p>Develop targeted marketing strategies based on data analysis.</p>
+          </div>
+        </div>
+        
+        <div class="subheader-text">Data used:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            <p>Collect the most recent 6 months of historical trip data (Jan 2024 - June 2024).</p>
+            <p>Raw data can be downloaded from <a target="_blank" href="https://divvy-tripdata.s3.amazonaws.com/index.html"> here</a></p>
+          </div>
+        </div>
+
+        <div class="subheader-text">Tools:</div>
+        <div class="project-details-content">
+            <div class="body-text">
+                <p>Excel for data processing and descriptive analysis.</p>
+                <p>SQL to merge multiple datasets into a single dataset, cleaning data, ensuring data integrity, create summary statistics. <a target="_blank" href="https://github.com/huynhtanphan/cyclistic-behavior/blob/main/sql_scripts.sql">Click here for more details</a></p>
+                <p>R [Optional] to merge multiple datasets into a single dataset, cleaning data, ensuring data integrity, visualization. <a target="_blank" href="https://github.com/huynhtanphan/cyclistic-behavior/blob/main/Cyclistic.Rmd">Click here for more details</a></p>
+            </div>
+        </div>
+
+       <!-- CHARTS -->
+       <div id="project-gallery">
+        <div class="subheader-text">Charts:</div>
+        <div class="project-gallery-content">
+            <div class="gallery-image-container">
+              <img src="../assets/gallery/the-number-of-riders-by-rider-type.webp" class="gallery-image">
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/gallery/the-average-duration-by-rider-type.webp" class="gallery-image">
+            </div>
+        </div>
+      </div>     
+      
+        <div class="subheader-text">Insights</div>
+        <div class="project-details-content">
+            <div class="body-text">
+                <p>1. Number of Rides by Rider Type (Casual and Member):</p>
+                <p>Casual Riders: The number of rides for this group is higher on weekends (Sunday and Saturday). This suggests that casual riders primarily use the bike service for recreational activities or tourism during the weekends.</p>
+                <p>Member Riders: The number of rides for this group is evenly distributed throughout the week, with peaks on weekdays (Tuesday, Wednesday, and Thursday). This indicates that members use bikes as a daily mode of transportation, possibly for commuting to work or other daily activities.</p>
+
+                <p>2. Average Duration of Rides by Rider Type:</p>
+                <p>Casual Riders: The average duration of rides for this group is always higher compared to the member group, especially on weekends. This suggests that casual riders tend to use bikes for longer trips, possibly for sightseeing or tourism.</p>
+                <p>Member Riders: The average duration of rides for this group is relatively low and stable throughout the week. This indicates that members primarily use bikes for shorter trips, possibly for commuting to work or other daily activities.</p>
+            </div>
+        </div>
+
+        <div class="subheader-text">Notes:</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            <p>The datasets have different names because Cyclistic is a fictional company. For the purposes of this case study, the datasets are appropriate and will enable you to answer the business questions. The data has been made available by Motivate International Inc. under this <a href="https://divvybikes.com/data-license-agreement">license</a>.</p>
+            <p>The data is updated monthly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.facebook.com/phanhuynhtann">
+        <image src="../assets/icons/facebook.svg" class="footer-icon" />
+      </a>
+  
+      <a class="icon-link" target="_blank" href="https://www.instagram.com/phan.huynh.tan">
+        <image src="../assets/icons/instagram.svg" class="footer-icon" />
+      </a>
+  
+      <a class="icon-link" target="_blank" href="https://twitter.com/PhanHuynhTan">
+        <image src="../assets/icons/twitter.svg" class="footer-icon" />
+      </a>
+  
+      <a class="icon-link" target="_blank" href="https://www.tiktok.com/@phanhuynhtann">
+        <image src="../assets/icons/tiktok.svg" class="footer-icon" />
+      </a>
+  
+      <a class="icon-link" target="_blank" href="https://www.youtube.com/@phanhuynhtann">
+        <image src="../assets/icons/youtube.svg" class="footer-icon" />
+      </a>
+  
+    </div>
+
+	</body>
+</html>
